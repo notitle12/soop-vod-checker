@@ -225,7 +225,7 @@ app.get('/', (req, res) => {
     
     <div class="control-panel">
         <div class="control-row">
-            <input type="text" id="bjId" placeholder="스트리머 ID 입력 (예: duke1224)">
+            <input type="text" id="bjId" placeholder="스트리머 ID 입력">
             
             <div class="input-group">
                 <label for="startDate">시작일:</label>
