@@ -259,8 +259,8 @@ app.get('/', (req, res) => {
 
         <div class="control-row" style="justify-content: space-between; border-top: 1px solid #f1f5f9; padding-top: 12px;">
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                <button id="modeIlsBtn" class="btn btn-mode active" onclick="setMode('ilsNormal')">일스: 50 미만</button>
-                <button id="modeIlsAllBtn" class="btn btn-mode" onclick="setMode('ilsAll')">일스: 전체조회 (50↑ 1년)</button>
+                <button id="modeIlsBtn" class="btn btn-mode active" onclick="setMode('ilsNormal')">일스(50미만)</button>
+                <button id="modeIlsAllBtn" class="btn btn-mode" onclick="setMode('ilsAll')">일스: 전체조회(1년)</button>
                 <button id="modeBesBtn" class="btn btn-mode" onclick="setMode('bes')">베스: 1001 미만 (2년)</button>
             </div>
 
