@@ -140,7 +140,7 @@ app.get('/', (req, res) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOOP 저조회수 VOD 탐색기</title>
+    <title>SOOP VOD 탐색기</title>
     <style>
         * { box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 24px; max-width: 1200px; margin: 0 auto; color: #1e293b; background-color: #f8fafc; }
@@ -191,10 +191,10 @@ app.get('/', (req, res) => {
     </style>
 </head>
 <body>
-    <h2>SOOP 저조회수 VOD 탐색기</h2>
+    <h2>SOOP VOD 탐색기</h2>
     
     <div class="box">
-        <input type="text" id="bjId" placeholder="스트리머 ID (예: duke1224)" style="flex: 2; min-width: 170px;">
+        <input type="text" id="bjId" placeholder="스트리머 ID" style="flex: 2; min-width: 170px;">
         
         <div class="input-group">
             <label for="startDate">시작일:</label>
@@ -316,7 +316,7 @@ app.get('/', (req, res) => {
                 }
 
                 currentVods = data.items || [];
-                status.innerText = \`총 \${data.totalFound}개의 저조회수 VOD를 찾았습니다.\`;
+                status.innerText = \`총 \${data.totalFound}개의 VOD를 찾았습니다.\`;
 
                 if (currentVods.length > 0) {
                     tableWrap.style.display = 'block';
